@@ -1,7 +1,5 @@
 [![NPM](https://nodei.co/npm/setconfig.svg?downloads=true&downloadRank=true)](https://nodei.co/npm/setconfig/)&nbsp;&nbsp;
-[![Build Status](https://travis-ci.org/pradeep-mishra/node-setconfig.svg)](https://travis-ci.org/pradeep-mishra/node-setconfig)
-
-
+[![Build Status](https://travis-ci.org/pradeep-mishra/node-setconfig.svg?branch=master)](https://travis-ci.org/pradeep-mishra/node-setconfig)
 
 setConfig
 =========
