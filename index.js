@@ -8,6 +8,14 @@ function setConfig(){
 		configPath = process.env.NODE_CONFIG_DIR, 
 		attributes = { } ;
 
+	if(!configPath && typeof(process.cwd) === "function"){
+		if(fs.existsSync(path.join( process.cwd(), 'configs'))){
+			configPath = path.join( process.cwd(), 'configs');	
+		}else if(fs.existsSync(path.join( process.cwd(), 'config'))){
+			configPath = path.join( process.cwd(), 'config');	
+		}
+	}
+
 	this.setPath = function(path){
 		if(path){
 			configPath = path;
@@ -24,7 +32,7 @@ function setConfig(){
 
 	this.load = function(){
 		if(!configPath){
-			throw Error("Config dir not set, use NODE_CONFIG_DIR or setPath() method");
+			throw Error("Config diretory not set, use NODE_CONFIG_DIR or setPath() method");
 		}
 		if(!env){
 			throw Error("Environment not set, use NODE_ENV var or setEnv() method");

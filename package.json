@@ -1,6 +1,6 @@
 {
   "name": "setconfig",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Node Configuration Loader, with some cool features",
   "author": "Pradeep Mishra. <pradeep.mishra@raweng.com>",
   "license": "MIT",

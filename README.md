@@ -1,3 +1,8 @@
+[![NPM](https://nodei.co/npm/setconfig.svg?downloads=true&downloadRank=true)](https://nodei.co/npm/setconfig/)&nbsp;&nbsp;
+[![Build Status](https://travis-ci.org/pradeep-mishra/node-setconfig.svg)](https://travis-ci.org/pradeep-mishra/node-setconfig)
+
+
+
 setConfig
 =========
 A Configuration Loader for Node.js
@@ -14,8 +19,8 @@ Features
 --------
 
 * Simple to use
-* Support commenting in configuration json file
-* Many helper functions to handle configs
+* Supports commenting in configuration json file
+* Helper functions to handle configuration
 
 
 
@@ -59,16 +64,18 @@ Example usage
 var setConfig = require('setconfig');
 
 // instantiate setConfig
-var config = new setConfig;
+var config = new setConfig();
 
 /*
-SetConfig support Environment variable to set application's enviroment and configuration directory path
+SetConfig support environment variable to set application's enviroment 
+and configuration directory path.
 
 NODE_ENV=development
 NODE_CONFIG_DIR=/myApp/configs/
 
 OR
 You can set it programatically
+
 */
 var configDir = __dirname + '/config';
 config.setpath(configDir);
@@ -80,13 +87,13 @@ config.load();
 
 // now setConfig is ready to use
 
-// get config
+// get property
 config.get('rateLimit');
 
-// get internal configs with period
+// get internal config properties with period
 config.get('rateLimit.limit');
 
-// set config
+// set property
 config.set('flag', true);
 
 // remove property
