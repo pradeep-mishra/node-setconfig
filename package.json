@@ -1,0 +1,22 @@
+{
+  "name": "setconfig",
+  "version": "0.0.1",
+  "description": "Node Configuration Loader, with some cool features",
+  "author": "Pradeep Mishra. <pradeep.mishra@raweng.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "config",
+    "config-loader",
+    "setconfig",
+    "set-config",
+    "config-manager",
+    "node-config",
+    "nodeconfig",
+    "configuration",
+    "node-configuration"
+  ],
+  "dependencies": {
+    "cjson": "^0.3.1"
+  }
+}
