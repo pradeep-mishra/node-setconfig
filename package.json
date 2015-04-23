@@ -1,6 +1,6 @@
 {
   "name": "setconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node Configuration Loader, with some cool features",
   "author": "Pradeep Mishra. <pradeep.mishra@raweng.com>",
   "license": "MIT",
@@ -14,8 +14,15 @@
     "node-config",
     "nodeconfig",
     "configuration",
-    "node-configuration"
+    "node-configuration",
+    "env",
+    "environment",
+    "conf"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pradeep-mishra/node-setconfig.git"
+  },
   "dependencies": {
     "cjson": "^0.3.1"
   }
